@@ -1,4 +1,6 @@
-## Kubernetes集群部署
+# 0.1测试版本：Kubernetes集群部署
+
+##若出现部分组件无法使用的情况，可替换成自己的组件
 
 ## 1、准备工作
 
@@ -14,16 +16,9 @@
 
 这里选用Docker（18.06.3），kubeadm（1.17.4）、kubelet（1.17.4）、kubectl（1.17.4）
 
-### （2）主机解析
+### （2）剩余安装步骤省略
 
-```powershell
-# 编辑/etc/hosts文件，添加如下内容：
-192.168.31.112	master
-192.168.31.192	node1
-192.168.31.172	node2
-```
-
-### （3）剩余安装步骤省略
+安装步骤可参考官方文档：https://kubernetes.io/zh/docs/tasks/tools/
 
 ## 2、搭建mysql
 
