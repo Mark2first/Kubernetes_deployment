@@ -56,7 +56,7 @@ spec:
 
 创建成功后界面如下：
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118201822047.png)
+![avatar](0.1/pic/image-20220118201822047.png)
 
 ### （2）然后创建Kubernetes Service，选择nodePort用以外部连接（源代码文件见0.1文件夹）
 
@@ -76,19 +76,19 @@ spec:
 
 创建成功后界面如下：
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203453890.png)
+![avatar](0.1/pic/image-20220118203453890.png)
 
 ### （3）写好服务后使用Navicat连接，连接成功后将服务所需的数据库导入
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203244826.png)
+![avatar](0.1/pic/image-20220118203244826.png)
 
 ### （4）连接成功后进入idea，将项目的jdbc地址改为Host地址进行测试
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203259814.png)
+![avatar](0.1/pic/image-20220118203259814.png)
 
 出现如下页面则成功：
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203312650.png)
+![avatar](0.1/pic/image-20220118203312650.png)
 
 ## 4、打包并将SSM项目上传至DockerHub
 
@@ -96,7 +96,7 @@ spec:
 
 首先利用idea的maven插件将项目打成war包，更名成ROOT.war。然后将war文件和其他文件放在同一文件夹（这部分文件主要是webapps包里的）
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118200114711.png)
+![avatar](0.1/pic/image-20220118200114711.png)
 
 ### （2）编写Dockfile，并将Dockerfile也放入文件夹中
 
@@ -159,7 +159,7 @@ spec:
 
 DashBoard出现如下界面则创建成功：
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203408797.png)
+![avatar](0.1/pic/image-20220118203408797.png)
 
 ### （2）创建Service，步骤同mysql创建Service（源代码文件见0.1文件夹）
 
@@ -180,7 +180,7 @@ spec:
 
 创建成功后界面如下：
 
-![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203339519.png)
+![avatar](0.1/pic/image-20220118203339519.png)
 
 ### （3）访问http://192.168.31.112:32376 ，等待片刻出现2（3）的页面则整个集群创建成功
 
