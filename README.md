@@ -1,8 +1,8 @@
 # 0.1测试版本：Kubernetes集群部署
 
-##若出现部分组件无法使用的情况，可替换成自己的组件，
+若出现部分组件无法使用的情况，可替换成自己的组件，
 
-该项目不涉及不商业使用，仅供技术交流，本人在学习搭建SSM博客使用的是该项目的前端：https://github.com/saysky/ForestBlog 在此感谢作者。
+该项目不涉及不商业使用，仅供技术交流。本人在学习搭建SSM博客使用的是该项目的前端：https://github.com/saysky/ForestBlog 在此感谢作者。
 
 ## 1、准备工作
 
@@ -18,9 +18,13 @@
 
 这里选用Docker（18.06.3），kubeadm（1.17.4）、kubelet（1.17.4）、kubectl（1.17.4）
 
-### （2）剩余安装步骤省略
+### （2）kubernetes安装：
 
-安装步骤可参考官方文档：https://kubernetes.io/zh/docs/tasks/tools/
+Kubernetes安装步骤可参考官方文档：https://kubernetes.io/zh/docs/tasks/tools/
+
+### （3）Dashboard安装：
+
+Dashboard安装步骤也可参考官方文档：https://kubernetes.io/zh/docs/tasks/access-application-cluster/web-ui-dashboard/
 
 ## 2、搭建mysql
 
