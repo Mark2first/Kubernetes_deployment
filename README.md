@@ -22,13 +22,13 @@
 
 Kubernetes安装步骤可参考官方文档：https://kubernetes.io/zh/docs/tasks/tools/
 
-### （3）Dashboard安装：
+## 2、Dashboard安装：
 
 Dashboard安装步骤也可参考官方文档：https://kubernetes.io/zh/docs/tasks/access-application-cluster/web-ui-dashboard/
 
-## 2、搭建mysql
+## 3、搭建mysql
 
-### （1）首先搭建RC
+### （1）首先搭建RC（源代码文件见0.1文件夹）
 
 ```yaml
 apiVersion: v1
@@ -58,7 +58,7 @@ spec:
 
 ![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118201822047.png)
 
-### （2）然后创建Kubernetes Service，选择nodePort用以外部连接
+### （2）然后创建Kubernetes Service，选择nodePort用以外部连接（源代码文件见0.1文件夹）
 
 ```yaml
 apiVersion: v1
@@ -90,7 +90,7 @@ spec:
 
 ![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203312650.png)
 
-## 3、打包并将SSM项目上传至DockerHub
+## 4、打包并将SSM项目上传至DockerHub
 
 ### （1）准备工作
 
@@ -132,7 +132,7 @@ docker pull mark2first/testtomcatcz:v1
 
 ## 4、部署集群
 
-### （1）配置deployment
+### （1）配置deployment（源代码文件见0.1文件夹）
 
 ```yaml
 apiVersion: apps/v1
@@ -161,7 +161,7 @@ DashBoard出现如下界面则创建成功：
 
 ![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203408797.png)
 
-### （2）创建Service，步骤同mysql创建Service
+### （2）创建Service，步骤同mysql创建Service（源代码文件见0.1文件夹）
 
 ```yaml
 apiVersion: v1
@@ -182,5 +182,5 @@ spec:
 
 ![avatar](http://mark2first.top:9000/?explorer/share/fileOut&shareID=7zdB_p2w&path=%7BshareItemLink%3A7zdB_p2w%7D%2Fimage-20220118203339519.png)
 
-### （3）访问http://192.168.31.112:32376，等待片刻出现2（3）的页面则整个集群创建成功
+### （3）访问http://192.168.31.112:32376 ，等待片刻出现2（3）的页面则整个集群创建成功
 
