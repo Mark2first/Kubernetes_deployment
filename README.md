@@ -127,7 +127,7 @@ docker login
 docker tag testtomcatcz1 mark2first/testtomcatcz:v1
 
 # 3 上传镜像
-docker pull mark2first/testtomcatcz:v1
+docker push mark2first/testtomcatcz:v1
 ```
 
 ## 4、部署集群
